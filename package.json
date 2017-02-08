@@ -11,6 +11,13 @@
         "resources": {
             "media": [
                 {
+                    "file": "images/Anery-Q Icon.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
                     "characterRegex": "[a-zA-Z0-9 ]",
                     "file": "fonts/Prelude-Medium.ttf",
                     "name": "FONT_PRELUDE_MEDIUM_30",
@@ -45,17 +52,6 @@
                 {
                     "file": "images/Mouse W.png",
                     "name": "IMAGE_MOUSE_W",
-                    "targetPlatforms": [
-                        "aplite",
-                        "basalt",
-                        "diorite"
-                    ],
-                    "type": "bitmap"
-                },
-                {
-                    "file": "images/Anery.Minus.SQ Icon.png",
-                    "menuIcon": true,
-                    "name": "IMAGE_ICON",
                     "targetPlatforms": [
                         "aplite",
                         "basalt",
