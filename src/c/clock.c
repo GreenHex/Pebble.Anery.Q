@@ -190,6 +190,7 @@ static void minutes_layer_update_proc( Layer *layer, GContext *ctx ) {
 
 static void seconds_layer_update_proc( Layer *layer, GContext *ctx ) {
   if ( !show_seconds ) return;
+  layer_set_hidden( battery_layer, false );
   
   GRect bounds = layer_get_bounds( layer );
   GPoint center_pt = grect_center_point( &bounds );
@@ -217,7 +218,6 @@ static void seconds_layer_update_proc( Layer *layer, GContext *ctx ) {
     .dot_colour = foreground_colour,
     .dot_outline_colour = background_colour
   } );
-  
   /*
   #if defined( PBL_COLOR )
   GPoint sec_hand_tip = (GPoint) {
@@ -242,7 +242,7 @@ static void stop_seconds_display( void* data ) { // after timer elapses
 void start_seconds_display( AccelAxisType axis, int32_t direction ) {
   tick_timer_service_subscribe( SECOND_UNIT, handle_clock_tick );
   show_seconds = true;
-  layer_set_hidden( battery_layer, false );
+  // layer_set_hidden( battery_layer, false );
   if ( secs_display_apptimer ) {
     app_timer_reschedule( secs_display_apptimer, SHOW_SECONDS_TIMER_TIMEOUT_MS );
   } else {

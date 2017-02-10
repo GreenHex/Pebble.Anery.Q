@@ -2,16 +2,16 @@
     "author": "The Resetter",
     "dependencies": {},
     "keywords": [],
-    "name": "anery-q-v1.0",
+    "name": "ulm-v1.1",
     "pebble": {
-        "displayName": "Anery-Q",
+        "displayName": "Ulm",
         "enableMultiJS": true,
         "messageKeys": [],
         "projectType": "native",
         "resources": {
             "media": [
                 {
-                    "file": "images/Anery-Q Icon.png",
+                    "file": "images/Ulm Icon.png",
                     "menuIcon": true,
                     "name": "IMAGE_ICON",
                     "targetPlatforms": null,
@@ -72,5 +72,5 @@
             "watchface": true
         }
     },
-    "version": "1.0.0"
+    "version": "1.1.0"
 }
